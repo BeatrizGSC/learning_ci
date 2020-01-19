@@ -14,7 +14,7 @@ clf.fit(X_train, y_train)
 
 print(clf.feature_importances_)
 
-y_pred = clf.predict_proba(X_test)
+y_pred = clf.predict(X_test)
 
 roc = roc_auc_score(y_test, y_pred)
 
