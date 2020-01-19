@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 
-X, y = make_classification(n_samples=1000, n_features=4,
+X, y = make_classification(n_samples=2000, n_features=4,
                             n_informative=2, n_redundant=0,
                             random_state=0, shuffle=False)
 
