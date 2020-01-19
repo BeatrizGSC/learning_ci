@@ -9,7 +9,7 @@ X, y = make_classification(n_samples=1000, n_features=4,
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.1)
 
-clf = RandomForestClassifier(max_depth=2, random_state=0)
+clf = RandomForestClassifier(max_depth=3, random_state=0)
 clf.fit(X_train, y_train)
 
 print(clf.feature_importances_)
